@@ -1,0 +1,38 @@
+<div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h2>User Registration</h2>
+      </div>
+  
+      <div class="row g-5 ">
+        <div class="col-md-7 col-lg-12">
+          <form [formGroup]="signupInfo" (ngSubmit)="signup()" ngNativeValidate>
+            <div class="row g-3">
+              <div class="col-sm-12 form-group">
+                <label>Name</label>
+                <input type="text"  class="form-control" formControlName="name" value="" required>
+              </div>
+              <div class="col-12 form-group">
+                <label>Email</label>
+                <input type="email" class="form-control" formControlName="email" required>
+              </div>
+              <div class="col-sm-12 form-group">
+                <label>password</label>
+                <input type="password" class="form-control" formControlName="password" value="" required>
+              </div>
+              <div class="col-12 form-group">
+                <label>Address</label>
+                <input type="text" class="form-control" formControlName="address" required>
+              </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+              <button class="m-1 btn btn-outline-primary" (click)="goTosingin()">Signin</button>
+              <button class="m-1 btn btn-outline-primary" type="submit">Signup</button>
+            </div>
+            <hr class="my-4">
+          </form>
+        </div>
+      </div>
+    </main>
+  </div>

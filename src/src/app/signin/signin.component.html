@@ -1,0 +1,24 @@
+<div *ngIf="alert" class="alert alert-danger alert-dismissible fade show" role="alert">
+  <strong>!!!</strong> Email or password incorrect.
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>
+<div class="modal modal-signin position-static d-block py-auto" tabindex="-1" role="dialog" id="modalSignin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-4 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0 text-center">
+        <h1 class="fw-bold mb-0 fs-2 w-100">Log-in</h1>
+      </div>
+      <div class="modal-body p-5 pt-0">
+          <form>
+                  <input class="form-control rounded-3 my-1" id="email" type="email" placeholder="name@example.com" name="email" [(ngModel)]="email">
+                  <input class="form-control rounded-3 my-1" id="password" type="password" placeholder="password" name="password" [(ngModel)]="password">
+              <div class="text-center">
+              <button class="m-1 btn btn-outline-primary" type="submit" (click)="signin()">Signin</button>
+              <button class="m-1 btn btn-outline-primary" type="submit" (click)="goTosingup()">Signup</button>
+              </div>
+
+          </form>  
+      </div>
+    </div>
+  </div>
+</div>
