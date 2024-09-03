@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "name": "Admin",
+      "email": "Admin@gmail.com",
+      "password": "Admin",
+      "address": "Bangalore",
+      "id": 1
+    },
+    {
+      "name": "sonam",
+      "email": "sonam@gmail.com",
+      "password": "1234",
+      "address": "Bangalore",
+      "id": 2
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Kitchen King",
+      "address": "Nagwara",
+      "contact": "8091784778",
+      "rating": 5,
+      "id": 1
+    }
+  ]
+}
